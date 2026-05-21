@@ -1,11 +1,13 @@
-import mysql.connector
+import psycopg2
 
 def create_connection():
-    conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="1234",
-        database="finance_tracker"
+
+    conn = psycopg2.connect(
+        host="ep-square-mud-apxzsymt.c-7.us-east-1.aws.neon.tech",
+        database="neondb",
+        user="neondb_owner",
+        password="npg_EXjBu2gqih6R",
+        sslmode="require"
     )
 
     return conn

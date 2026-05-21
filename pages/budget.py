@@ -17,7 +17,7 @@ def set_budget():
     if st.button("Save Budget"):
 
         conn = create_connection()
-        cursor = conn.cursor(buffered=True)
+        cursor = conn.cursor()
 
         query = """
         INSERT INTO budgets

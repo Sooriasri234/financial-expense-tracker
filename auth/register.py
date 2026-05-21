@@ -18,7 +18,7 @@ def register_user():
         )
 
         conn = create_connection()
-        cursor = conn.cursor(buffered=True)
+        cursor = conn.cursor()
 
         query = """
         INSERT INTO users(username, email, password)

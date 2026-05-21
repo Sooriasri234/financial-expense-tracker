@@ -14,7 +14,7 @@ def login_user():
     if st.button("Login"):
 
         conn = create_connection()
-        cursor = conn.cursor(buffered=True)
+        cursor = conn.cursor()
 
         query = "SELECT * FROM users WHERE email=%s"
 

@@ -53,7 +53,7 @@ def add_expense():
         try:
 
             conn = create_connection()
-            cursor = conn.cursor(buffered=True)
+            cursor = conn.cursor()
 
             # ---------------- INSERT TRANSACTION ---------------- #
 
