@@ -2,8 +2,9 @@ streamlit
 pandas
 numpy
 plotly
-mysql-connector-python
 bcrypt
 PyJWT
 scikit-learn
 joblib
+psycopg2-binary
+sqlalchemy
