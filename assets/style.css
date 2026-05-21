@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: rgba(15, 23, 42, 0.95);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Sidebar Text */
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Metric Cards */
+.metric-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Hover Effect */
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.stButton>button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #1d4ed8, #6d28d9);
+}
+
+/* Input Fields */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stTextArea textarea {
+
+    background-color: rgba(15, 23, 42, 0.85) !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid rgba(255,255,255,0.2) !important;
+
+    border-radius: 12px !important;
+
+    padding: 10px !important;
+}
+
+/* Placeholder Text */
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+
+    color: rgba(255,255,255,0.6) !important;
+}
+
+/* Selectbox */
+
+div[data-baseweb="select"] {
+
+    background-color: rgba(15, 23, 42, 0.85) !important;
+
+    border-radius: 12px !important;
+
+    color: white !important;
+}
+
+/* Dropdown Text */
+
+div[data-baseweb="select"] span {
+
+    color: white !important;
+}
+
+/* Date Picker */
+
+.stDateInput {
+
+    color: white !important;
+}
+
+/* Labels */
+
+label {
+
+    color: white !important;
+
+    font-weight: 500 !important;
+}
+
+/* Selectbox */
+div[data-baseweb="select"] {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+/* Success Message */
+.stAlert {
+    border-radius: 12px;
+}
