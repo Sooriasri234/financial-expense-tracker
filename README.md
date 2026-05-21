@@ -1,5 +1,5 @@
 
-# Financial Expense Tracker
+# Financial Expense Tracking & Analytics
 
 A Machine Learning based Financial Expense Tracking and Analytics System built using Streamlit, Python, MySQL/SQLite, and Scikit-learn.
 
