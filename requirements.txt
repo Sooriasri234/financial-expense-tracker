@@ -8,3 +8,5 @@ scikit-learn
 joblib
 psycopg2-binary
 sqlalchemy
+streamlit-google-auth
+streamlit-oauth
