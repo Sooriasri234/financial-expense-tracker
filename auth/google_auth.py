@@ -23,7 +23,7 @@ def google_login():
 
     result = oauth2.authorize_button(
         name="Continue with Google",
-        redirect_uri="https://financial-expense-tracker-5twxsfnmjp5trvrtoy5tdt.streamlit.app",
+        redirect_uri="https://financial-expense-tracker-5twxsfnmjp5trvrtoy5tdt.streamlit.app/",
         scope="openid email profile",
         key="google",
     )
